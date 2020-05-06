@@ -1,4 +1,4 @@
-package com.fabio.junior.booksnytmvvm.presentation.books
+package com.fabio.junior.booksnytmvvm.presentation.books.repository
 
 import com.fabio.junior.booksnytmvvm.data.ApiService
 import com.fabio.junior.booksnytmvvm.data.response.BookResponse
