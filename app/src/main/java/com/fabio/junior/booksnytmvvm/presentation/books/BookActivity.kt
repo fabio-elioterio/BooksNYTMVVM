@@ -17,6 +17,7 @@ class BookActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_book)
 
+        //ViewModelProviders.of, what means?
         val viewModel: BookViewModel = ViewModelProviders.of(this).get(BookViewModel::class.java)
 
         viewModel.bookLiveData.observe(this, Observer {
@@ -30,7 +31,7 @@ class BookActivity : AppCompatActivity() {
         })
 
         viewModel.isLoading.observe(this, Observer {
-            if (it == true) {
+            if (it) {
                 progressBar.visibility = View.VISIBLE
             } else {
                 progressBar.visibility = View.GONE
